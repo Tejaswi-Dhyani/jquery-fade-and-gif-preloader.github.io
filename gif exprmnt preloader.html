@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            width: 100%;
+            height: auto;
+            background:#fec800 ;
+        }
+        #loading{
+	position: fixed; 
+	width: 100%;
+	height: 100vh;
+	background:#fec800 url("https://cdn.dribbble.com/users/891352/screenshots/3675943/lego-loader.gif") no-repeat center  ;
+   
+	 z-index: 99999; 
+}
+
+
+    </style>
+</head>
+<body onload="myfunc()">
+    <div id="loading"></div> 
+    <ul style="color: blue; background: chartreuse;">
+        <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus, alias.</li>
+        <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus, eligendi?</li>
+        <li>Lorem ipsum dolor sit amet.</li>
+    </ul>
+    <br>
+    <p style="color: brown; background: palegreen;">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dignissimos dolores veniam provident minima amet nemo sint unde fugiat sapiente laboriosam?</p>
+    <br>
+    <p style="color: purple; background:aqua;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni ut, nihil quasi commodi mollitia provident repellendus assumenda incidunt accusamus id suscipit, necessitatibus placeat, reprehenderit tempore!</p>
+    <div id="test"></div>
+    <br>
+    <div class="tests"></div>
+    <br>
+    <button id="hideseek"  style="font-size: larger; color: crimson; background: yellowgreen;">click me</button>
+   <button id="para" style="font-size: larger; color: rgb(185, 14, 157); background: rgb(202, 148, 200);">hide para</button>
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+   <script>
+    //    var preloader=document.getElementById("loading");
+    //    myfunc=()=>{
+    //     preloader.style.display="none";
+    //    }
+       
+       setTimeout(function(){
+        $("#loading").css("display","none")
+      },1000) ;
+   </script>
+</body>
+</html>
